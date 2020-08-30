@@ -35,6 +35,15 @@ app.post("/users", (req, res) => {
   });
 });
 
+app.get("/users/:id", (req, res) => {
+  client.query(
+    `SELECT * FROM users WHERE id = ${req.params.id}`,
+    (err, result) => {
+      res.send(result.rows[0]);
+    }
+  );
+});
+
 // start a server that listens on port 3000 and connects the sql client on success
 app.listen(PORT, () => {
   console.log(`App listening on http://localhost:${PORT}`);
