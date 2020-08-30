@@ -1,0 +1,24 @@
+{
+  "name": "social-media-queries",
+  "version": "1.0.0",
+  "description": "Backend service that executes SQL queries",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisfff29/social-media-queries.git"
+  },
+  "author": "Luis Fuentes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luisfff29/social-media-queries/issues"
+  },
+  "homepage": "https://github.com/luisfff29/social-media-queries#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.3.3"
+  }
+}
